@@ -1,0 +1,168 @@
+/**
+  * Name: Wilford Engel
+  * SRN: 130190747
+  * Date: 19th April 2016
+  * Description: vstylesheet for classroom
+*/
+
+body {
+  background-color: #C4C4C4;
+}
+
+.no-pad {
+  padding: 0;
+}
+
+.height-full {
+  height: 100vh;
+}
+
+.height-half {
+  height: 50vh;
+}
+
+.pad-bottom {
+  padding-bottom: 100px;
+}
+
+.blockSectionHeader {
+  text-align: center;
+}
+
+.panel h1 {
+  /*font-family: 'Itim', cursive;*/
+  /*font-weight: 400;*/
+  padding-bottom: 50px;
+}
+
+.insert-panel {
+  height: 30vh;
+  overflow-y: auto;
+}
+
+.pad-top {
+  padding-top: 10%;
+}
+
+input.spmhidip {
+  display: none;
+  width:10px;
+  height:3px;
+}
+
+.commsbar {
+  background-color: #ededed;
+}
+
+.lesson {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+.commsbar {
+  position: fixed;
+}
+
+.video {
+  background-color: black;
+  border-radius: 5px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.chat {
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}
+
+.their-video, .my-video {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.their-video {
+  width: 100%    !important;
+  height: auto   !important;
+}
+
+.my-video-div {
+  width: 100px;
+  height: 80px;
+  margin-top: 15px;
+}
+
+.video-buttons {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.btn-fab {
+  margin-left: 5px;
+}
+
+.this-message, .that-message {
+  width: 75%;
+  min-height: 30px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-top: 8px;
+  color: white;
+}
+
+.this-message {
+  background-color: #53adcb;
+  border-radius: 5px 5px 0 5px;
+}
+
+.that-message {
+  background-color: #51e951;
+  border-radius: 5px 5px 5px 0;
+}
+
+.type-chat {
+  width: 75%;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.highlight {
+	background-color:	rgba(243,243,21,0.4);
+	font-weight:		bold;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.image-results {
+  list-style: none;
+  height: 180px;
+}
+
+#image-block .panel-body {
+  min-height: 350px;
+}

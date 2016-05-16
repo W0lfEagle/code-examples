@@ -1,0 +1,40 @@
+ <!--
+     Name: Wilford Engel
+     SRN: 130190747
+     Date: 19th April 2016
+     Description: reading block template
+     content populated by angular
+ -->
+
+<div class="container-fluid pad-top" id="reading">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h1 class="panel-title">Reading</h3>
+            </div>
+            <div class="panel-body">
+                <h2>{{content[contentId.id - 1].title}}</h2>
+                <!-- highlight directive to make text highlightable -->
+                <highlight>
+                    <p ng-repeat="n in content[contentId.id - 1].data">
+                    {{n}}
+                    </p>
+                </highlight>
+            </div>
+            <!--<div id="result" style="color:red"></div> -->
+            <div ng-if="currentPath == 'teacherroom'" id="wordlist" class="">The words they selected are:</div>
+            <div id="dictionary" class="panel-footer">
+                <div ng-if="word != null" class="row"  dictionary> <!-- dictionary directive -->
+                    <select ng-options="o.name for o in langOptions" ng-model="destLang"></select> <!-- set language for dictionary -->
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <h1 class="text-center">{{word}}</h1>
+                        <p>Type: {{wordType}}</p>
+                        <p>Translation: <word ng-repeat="item in translations">{{$index + 1}}. {{item}} </word></p>
+                    </div>
+                    <p>Powered by Yandex.<a href="https://tech.yandex.com/dictionary/">Dictionary</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

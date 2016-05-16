@@ -1,0 +1,39 @@
+ <!--
+     Name: Wilford Engel
+     SRN: 130190747
+     Date: 19th April 2016
+     Description: image block template
+     content populated by bigstock api
+ -->
+
+<div class="container-fluid pad-top">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+        <div class="panel panel-default" id="image-block">
+            <div class="panel-heading">
+                <h1 class="panel-title">Images</h3>
+            </div>
+            <div class="panel-body">
+            
+                <div id="search-form">
+                    <form class="form-search" ng-show="currentPath == 'teacherroom'">
+                        <input type="text" class="search-query span4" placeholder="Show your student some pictures...">
+                        <button id="image-search-submit" type="submit" class="btn btn-primary">Search</button>
+                        <button onclick="sendMessage('setImages', '')" class="btn btn-flat btn-warning">Send to student</button>
+                    </form>
+                    <!-- this div will be populated with search results -->
+                    <div id="results-holder"> <!-- class="well hide" -->
+                      <ul class="thumbnails" id="results">
+                          <h2 class="text-center">Images will appear here.</h2>
+                      </ul>
+                    </div>
+                </div>
+                <!-- search results item template -->
+                <ul class="item-template hide">
+                  <li class="col-sm-4 image-results">
+                    <div class="thumbnail"><img></div>
+                  </li>
+                </ul>
+            </div>  <!-- panel body -->
+        </div><!-- container -->
+    </div><!-- col -->
+</div><!-- panel -->

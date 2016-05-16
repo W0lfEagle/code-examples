@@ -1,0 +1,30 @@
+ <!--
+     Name: Wilford Engel
+     SRN: 130190747
+     Date: 19th April 2016
+     Description: main classroom file imports the classhead,
+     initiates the angular app, imports the lesson and comms panels and
+     sets up the custom scrollbar
+ -->
+ 
+<!DOCTYPE html>
+<html ng-app="classroomApp">
+    <head>
+        <% include partials/template/classhead.ejs %>
+    </head>
+    <body onload="my_init()">
+        <div class="container-fluid height-full" id="classroom" classroom ng-controller="classroomController">
+            {{LooksLikeAngularIsBroken}}
+            <div class="row height-full">
+                <% include partials/content/lesson.ejs %>
+                <% include partials/content/comms.ejs %>
+            </div>
+        </div>
+        <script>
+            $(".insert-panel").mCustomScrollbar({ 
+                mouseWheel:{ preventDefault: true },
+                scrollInertia: 100 });
+            $(".lesson").mCustomScrollbar({ scrollInertia: 100 });
+        </script>
+    </body>
+</html>
