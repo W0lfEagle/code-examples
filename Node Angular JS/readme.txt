@@ -6,6 +6,26 @@ Deployment of this version at
 Teacher: https://uol-final-project.herokuapp.com/teacherroom
 Student: https://uol-final-project.herokuapp.com/studentroom
 
+Open one of each
+Accept camera and microphone 
+WebRTC connection sets itself up automatically using websockets
+If connection made, call button on teacher side turns green - press it
+Call made (hopefully)
+Teacher can insert content into the lesson
+Blocks and functions - 
+	Reading - 	student side - double click to highlight and start disctionary service using Yandex translate API
+			teacher side - word shown as label at bottom
+			word added to dynamic vocabulary block
+	Conversation - 	static content
+	Vocabulary - 	either static or dynamically built using selected words
+	Video - 	YouTube Iframe API
+			teacher side - synchronised playback controls
+	Image - 	teacher search for image using BigStock API
+			teacher sends to student
+			Student side - images displayed
+Text chat - over webRTC using data channel
+webRTC messages also used for control messages - adding and removing content from the scope etc.
+
 Incomplete file structure 
 
 Virtual Classroom built specifically for language students and tutors
